@@ -1,5 +1,5 @@
-# X-Serv-14.6-ServURLAleat
-Ejercicio 14.5.-Clase servidor de aplicaciones, generador de URLs aleatorias
+# X-Serv-14.7-ServURLAleat
+Ejercicio 14.7.-Clase servidor de aplicaciones, generador de URLs aleatorias
 
 ## Enunciado
 
@@ -8,9 +8,9 @@ importar la clase <i>webApp</i> del módulo <i>webapp.py</i> que hay en el repos
 
 ## Forma de entrega
 
-Has de tener un repositorio llamado X-Serv-14.5-ServURLAleat en tu cuenta en GitHub
+Has de tener un repositorio llamado X-Serv-14.7-ServURLAleat en tu cuenta en GitHub
 que incluya el fichero de nombre 'aleat.py' que contenga las
-instrucciones en Python para solucionar el ejercicio.
+instrucciones en Python3 para solucionar el ejercicio.
 
 Se proporciona un script, check.py, para comprobar la entrega correcta
 del ejercicio. El script de comprobación se ha de ejecutar desde terminal
