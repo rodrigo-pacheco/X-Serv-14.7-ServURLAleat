@@ -11,41 +11,20 @@ import socket
 import random
 import webapp
 
+class myApp(webapp.webApp)
+    def parse(self, request):
+        try:
+            method = received.split()[0]
+            resource = received.split()[1]
+            return(method, resource)
+        except:
+            return('', '')
 
-def parse(self, request):
-    try:
-        method = received.split()[0]
-        resource = received.split()[1]
-        return(method, resource)
-    except:
-        return('', '')
-
-def process(self, parsedRequest):
-    rnd_num = random.randint(1, 9999999)
-    return ("200 OK", "<html><body><h1>Hola!</h1>" +
-                      "<a href=" + str(rnd_num) + ">Dame otra</a>" +
-                      "</body></html>")
+    def process(parsedRequest):
+        rnd_num = random.randint(1, 9999999)
+        return ("200 OK", "<html><body><h1>Hola!</h1>" +
+                          "<a href=" + str(rnd_num) + ">Dame otra</a>" +
+                          "</body></html>")
 
 if __name__ == "__main__":
-
-    try:
-        while True:
-            myApp = webapp("localhost", 1234))
-            # print('Waiting for connections')
-            # (recvSocket, address) = mySocket.accept()
-            # print('Request received:')
-            # print(recvSocket.recv(2048))
-            # print('Answering back...')
-            #
-            # rnd_num = random.randint(1, 9999999)
-            #
-            # recvSocket.send(bytes(
-            #                 "HTTP/1.1 200 OK\r\n\r\n" +
-            #                 "<html><body><h1>Hola!</h1>" +
-            #                 "<a href=" + str(rnd_num) + ">Dame otra</a>" +
-            #                 "</body></html>" +
-            #                 "\r\n", "utf-8"))
-            # recvSocket.close()
-    except KeyboardInterrupt:
-        print("Closing binded socket")
-        mySocket.close()
+    myApp = webapp.webApp("localhost", 1234)
