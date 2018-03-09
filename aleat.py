@@ -12,7 +12,7 @@ import random
 import webapp
 
 
-def parse:
+def parse(self, request):
     try:
         method = received.split()[0]
         resource = received.split()[1]
@@ -20,7 +20,7 @@ def parse:
     except:
         return('', '')
 
-def process:
+def process(self, parsedRequest):
     rnd_num = random.randint(1, 9999999)
     return ("200 OK", "<html><body><h1>Hola!</h1>" +
                       "<a href=" + str(rnd_num) + ">Dame otra</a>" +
